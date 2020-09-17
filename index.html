@@ -1,44 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="./styles/index.css">
 </head>
 <body>
+	<center>
+		<h1>GROUP 9 </h1>
+		<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+		<button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</button>
+	</center>
 
-<h2>GROUP 9 </h2>
+	<div id="id01" class="modal">
+	  <form class="modal-content animate" action="#" method="post">
 
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+			<div class="headcontainer">
+	      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close popup">&times;</span>
+	      <h2>Log In</h2>
+	    </div>
 
-<div id="id01" class="modal">
-  
-  <form class="modal-content animate" action="/action_page.php" method="post">
-    <div class="imgcontainer">
-      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="img_avatar2.png" alt="Avatar" class="avatar">
-    </div>
+			<div class="container">
+	      <label for="uid"><b>User ID</b></label>
+	      <input type="text" placeholder="Enter User ID" name="uid" required>
 
-    <div class="container">
-      <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
+	      <label for="psw"><b>Password</b></label>
+	      <input type="password" placeholder="Enter Password" name="psw" required>
 
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-        
-      <button type="submit">Login</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
-    </div>
+	      <button type="submit">Login</button>
+	    </div>
+	  </form>
+	</div>
 
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
-  </form>
-</div>
+	<div id="id02" class="modal">
 
-<script type="text/javascript" src="./scripts/index.js"></script>
+	  <form class="modal-content animate" action="#" method="post">
+			<div class="headcontainer">
+	      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close popup">&times;</span>
+	      <h2>Sign Up</h2>
+	    </div>
+
+	    <div class="container">
+	      <label for="uid"><b>User ID</b></label>
+	      <input type="text" placeholder="Create User ID" name="uid" required>
+
+				<label for="uname"><b>Username</b></label>
+	      <input type="text" placeholder="Enter Your Name" name="uname" required>
+
+				<label for="email"><b>Email</b></label>
+	      <input type="email" placeholder="Enter Your Email id" name="email" required>
+
+	      <label for="psw"><b>Password</b></label>
+	      <input type="password" placeholder="Enter Password" name="psw" required>
+
+				<label for="psw"><b>Re-enter Password</b></label>
+	      <input type="password" placeholder="Re-Enter Password" required>
+
+	      <button type="submit">Sign UP</button>
+	    </div>
+	  </form>
+	</div>
 
 </body>
+<script type="text/javascript" src="./scripts/index.js"></script>
 </html>
