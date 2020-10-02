@@ -13,6 +13,4 @@
     let sem=document.getElementById("sem").value;
     console.log(sem);
   }, 500);
-
-
 }
