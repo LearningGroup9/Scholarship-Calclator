@@ -1,4 +1,4 @@
-.hide,hide2{
+.hide,.hide2{
   display: none;
 }
 
@@ -39,11 +39,11 @@ p
 	text-align:justify;
 }
 
-	table, th, td	
+	table, th, td
 	{
 	border-collapse:collapse;
 	}
-	
+
 	table
 	{
 	width:60%;
@@ -85,14 +85,14 @@ p
 	{
 	background-color:#FF99CC;
 	}
-	
+
 input[type=text]
 	{
 	background-color:#ffebee;
 	border-bottom: 2px solid #2196f3;
-	}	
+	}
 
-textarea 
+textarea
 	{
 	width:50%;
 	height:50px
