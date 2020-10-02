@@ -10,7 +10,17 @@
       }
     }
     document.getElementById(course).style.display="block";
-    let sem=document.getElementById("sem").value;
-    console.log(sem);
   }, 500);
+  let sem= document.getElementById("sem");
+  sem.addEventListener("keydown",function(e){
+    if((e.keyCode>49&&e.keyCode<53)||(e.keyCode>97&&e.keyCode<101)){
+      document.getElementById("prev-sem").style.display="block";
+    }
+    else{
+      document.getElementById("prev-sem").style.display="none";
+    }
+  });
+  function show_scholarship(){
+    document.getElementById("show").style.display="block";
+  }
 }

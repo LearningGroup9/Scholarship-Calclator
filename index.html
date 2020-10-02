@@ -8,7 +8,7 @@
   <body>
     <center>
     <h1>Calculate GEHU Scholarship</h1>
-    <form class="main-form" action="index.html" method="post">
+    <form class="main-form">
       <label for="tenth">10<sup>th</sup> Percentage</label>
       <input type="number" id="tenth" name="tenth"><br>
 
@@ -17,8 +17,7 @@
 
       <label for="course">Course</label>
       <select name="course" id="course">
-
-          <option value="0" selector="disabled"></option>
+        <option value="0" selector="disabled"></option>
         <option value="btech">B Tech</option>
         <option value="bca">BCA</option>
       </select>
@@ -37,10 +36,33 @@
       </div>
       <div class="hide" id="bca">
         <label for="bcsem">Semester</label>
-        <input id="sem" type="number" placeholder="1/2/3/4/5/6..">        
+        <input id="sem" type="number" placeholder="1/2/3/4/5/6..">
+        <br>
       </div>
-      <br><button type="submit">Get Scholarship value</button>
+      <div class="hide" id="prev-sem">
+        <label for="p-sem">Previous sem Result</label>
+        <input type="number">
+      </div><br>
+      Choose other key ingridients for ur scholarship<br>
+      <input type="checkbox" name="other" id="gc" value="gc">
+      <label for="gc">Girl Candidate</label>
+      <br>
+      <input type="checkbox" name="other" id="sb" value="sb">
+      <label for="sb">Sibblings</label>
+      <br>
+      <input type="checkbox" name="other" id="uk" value="uk">
+      <label for="uk">Uttarakhkand Domicile</label>
+      <br>
+      <input type="checkbox" name="other" id="army" value="army">
+      <label for="army">parents in army</label>
+      <br>
+
+      <br>
+      <button onclick="show_scholarship()">Get Scholarship value</button>
     </form>
+    <div class="hide2" id="show">
+      Initial value
+    </div>
     </center>
   </body>
   <script type="text/javascript"src="./script.js">
