@@ -10,7 +10,9 @@
         arr[i].style.display="none";
       }
     }
-    document.getElementById(course).style.display="block";
+    if(crse=="btech"||crse=="mtech"){
+      document.getElementById(course).style.display="block";
+    }
   }, 1000);
 
   let sem= document.getElementById("sem");
@@ -41,6 +43,7 @@
       }
     }
   });
+  
   function show_scholarship(){
     document.getElementById("show").style.display="block";
   }
