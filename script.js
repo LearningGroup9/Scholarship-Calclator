@@ -23,4 +23,27 @@
   function show_scholarship(){
     document.getElementById("show").style.display="block";
   }
+  
+ function validation(){
+ var x= document.getElementById('10th').value;
+ var y= document.getElementById('12th').value
+ if(x==""){
+   document.getElementById('10th').innerHTML = "Please fill the percentage box";
+   return false;
+    }
+ if((x.length<0) || (x.length >100) || isNaN(x){
+
+    document.getElementById('10th').innerHTML ="**Invalid Entry";
+    return false;
+   } 
+ if(y==""){
+   document.getElementById('12th').innerHTML = "Please fill the percentage box";
+   return false;
+   }
+ if((y.length<0) || (y.length >100) || isNaN(y){
+    document.getElementById('12th').innerHTML ="**Invalid Entry";
+    return false;
+   } 
+ }
+
 }
