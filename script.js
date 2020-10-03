@@ -10,7 +10,7 @@
       }
     }
     document.getElementById(course).style.display="block";
-  }, 500);
+  }, 1000);
   let sem= document.getElementById("sem");
   sem.addEventListener("keydown",function(e){
     if((e.keyCode>49&&e.keyCode<53)||(e.keyCode>97&&e.keyCode<101)){
