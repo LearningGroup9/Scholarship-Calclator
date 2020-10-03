@@ -21,6 +21,11 @@
       <select name="course" id="course">
         <option value="btech">B Tech</option>
         <option value="bca">BCA</option>
+        <option value="bba">BBA</option>
+        <option value="bsc">Bsc Ag</option>
+        <option value="mba">MBA</option>
+        <option value="mca">MCA</option>
+        <option value="mtech">M Tech</option>
       </select>
 
       <div class="hide" id="btech">
@@ -31,19 +36,27 @@
           <option value="civil">Civil</option>
           <option value="mech">Mechanical</option>
         </select>
-        <br>
-        <label for="btsem">Semester</label>
-        <input id="sem" type="number" placeholder="1/2/3/4/5/6..">
       </div>
-      <div class="hide" id="bca">
-        <label for="bcsem">Semester</label>
-        <input id="sem" type="number" placeholder="1/2/3/4/5/6.." >
-        <br>
+
+      <div class="hide" id="mtech">
+        <label for="branch">Branch</label>
+        <select class="branch" name="branch">
+          <option value="cs">CS</option>
+          <option value="ec">Electronics</option>
+          <option value="civil">Civil</option>
+          <option value="mech">Mechanical</option>
+        </select>
       </div>
+
+      <label for="sem">select semester</label>
+      <input id="sem" type="number" placeholder="1/2/3/4">
+
       <div class="hide" id="prev-sem">
         <label for="p-sem">Previous sem Result</label>
         <input type="number">
-      </div><br>
+      </div>
+
+      <br>
       Choose other key ingridients for ur scholarship<br>
       <input type="checkbox" name="other" id="gc" value="gc">
       <label for="gc">Girl Candidate</label>
