@@ -14,7 +14,6 @@
       document.getElementById(course).style.display="block";
     }
   }, 1000);
-  
 
   let sem= document.getElementById("sem");
 
@@ -48,27 +47,19 @@
   function show_scholarship(){
     document.getElementById("show").style.display="block";
   }
-  
- function validation(){
- var x= document.getElementById('10th').value;
- var y= document.getElementById('12th').value
- if(x==""){
-   document.getElementById('10th').innerHTML = "Please fill the percentage box";
-   return false;
+
+  function validation(){
+    let tn_val= document.getElementById("tenth").value;
+    let tw_val= document.getElementById("twelth").value;
+    let tn= document.getElementById('10th');
+    let tw= document.getElementById('12th');
+    tn.style.color="red";
+    tw.style.color="red";
+    if(tn_val<0 ||tn_val>100 || isNaN(tn_val)){
+      tn.innerHTML ="**Invalid Entry";
     }
- if((x.length<0) || (x.length >100) || isNaN(x){
-
-    document.getElementById('10th').innerHTML ="**Invalid Entry";
-    return false;
-   } 
- if(y==""){
-   document.getElementById('12th').innerHTML = "Please fill the percentage box";
-   return false;
-   }
- if((y.length<0) || (y.length >100) || isNaN(y){
-    document.getElementById('12th').innerHTML ="**Invalid Entry";
-    return false;
-   } 
- }
-
+    if(tw_val<0 ||tw_val>100 || isNaN(tw_val)){
+      tw.innerHTML ="**Invalid Entry";
+    }
+  }
 }
