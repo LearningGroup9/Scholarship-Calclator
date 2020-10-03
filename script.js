@@ -1,5 +1,6 @@
 {
   let crse=document.querySelector("#course").value;
+
   setInterval(function(){
     let course=document.querySelector("#course").value;
     if(crse!=course){
@@ -11,13 +12,33 @@
     }
     document.getElementById(course).style.display="block";
   }, 1000);
+
   let sem= document.getElementById("sem");
+
   sem.addEventListener("keydown",function(e){
-    if((e.keyCode>49&&e.keyCode<53)||(e.keyCode>97&&e.keyCode<101)){
-      document.getElementById("prev-sem").style.display="block";
+    if(crse=="btech"){
+      if((e.keyCode>49&&e.keyCode<57)||(e.keyCode>97&&e.keyCode<105)){
+        document.getElementById("prev-sem").style.display="block";
+      }
+      else{
+        document.getElementById("prev-sem").style.display="none";
+      }
+    }
+    else if(crse=="mba"||crse=="mca"||crse=="mtech"){
+      if((e.keyCode>49&&e.keyCode<53)||(e.keyCode>97&&e.keyCode<101)){
+        document.getElementById("prev-sem").style.display="block";
+      }
+      else{
+        document.getElementById("prev-sem").style.display="none";
+      }
     }
     else{
-      document.getElementById("prev-sem").style.display="none";
+      if((e.keyCode>49&&e.keyCode<55)||(e.keyCode>97&&e.keyCode<103)){
+        document.getElementById("prev-sem").style.display="block";
+      }
+      else{
+        document.getElementById("prev-sem").style.display="none";
+      }
     }
   });
   function show_scholarship(){
