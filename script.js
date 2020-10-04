@@ -53,13 +53,21 @@
     let tw_val= document.getElementById("twelth").value;
     let tn= document.getElementById('10th');
     let tw= document.getElementById('12th');
+    let check=0;
     tn.style.color="red";
     tw.style.color="red";
     if(tn_val<0 ||tn_val>100 || isNaN(tn_val)){
       tn.innerHTML ="**Invalid Entry";
+      check=1;
+      return false;
     }
     if(tw_val<0 ||tw_val>100 || isNaN(tw_val)){
       tw.innerHTML ="**Invalid Entry";
+      check =1;
+      return false
+    }
+    if(check!=1){
+      return true;
     }
   }
 }

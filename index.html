@@ -8,13 +8,13 @@
   <body>
     <center>
     <h1>Calculate GEHU Scholarship</h1>
-  <!--  <form class="main-form" name="myForm">-->
-      <label for="tenth">10<sup>th</sup> Percentage></label>
-      <input type="number" id="tenth" name="tenth">
+    <form class="main-form" name="myForm" action="./db/get.php" onsubmit="return validation()" method="post">
+      <label for="tenth">10<sup>th</sup> Percentage</label>
+      <input type="number" id="tenth" name="tenth" required>
       <span id="10th"></span><br>
 
       <label for="twelth">12<sup>th</sup> Percentage</label>
-      <input type="number" id="twelth" name="twelth">
+      <input type="number" id="twelth" name="twelth" required>
       <span id="12th"></span><br>
 
       <label for="course">Course</label>
@@ -53,7 +53,7 @@
 
       <div class="hide" id="prev-sem">
         <label for="p-sem">Previous sem Result</label>
-        <input type="number">
+        <input type="number" required>
       </div>
 
       <br>
@@ -72,7 +72,7 @@
       <br>
 
       <br>
-      <button onclick="validation()">Get Scholarship value</button>
+      <button type="submit">Get Scholarship value</button>
   <!--  </form> -->
     <br>
     <div class="hide2" id="show">
