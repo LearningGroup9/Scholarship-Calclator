@@ -7,6 +7,17 @@ body
 	background-color:#d1f2eb;
 }
 
+#Main{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+}
+
+#info,#form{
+  flex-basis: 30%;
+  border: 0.5vmin solid powderblue; 
+}
 h1
 {
 	color:black;
@@ -16,6 +27,7 @@ h1
 	letter-spacing:2px;
 	text-shadow:3px 3px 5px lime;
 }
+/*
 h2
 {
 	color:black;
@@ -55,7 +67,7 @@ p
 	text-align:left;
 	vertical-align:bottom;
 	padding:10px;
-	border-bottom:2px solid yellow; /*horizontal divider */
+	border-bottom:2px solid yellow;
 	}
 	ul
 	{
@@ -68,7 +80,7 @@ p
 	}
 	ol
 	{
-	list-style-type:lower-alpha; /*lower-roman*/
+	list-style-type:lower-alpha;
 	list-style-position: inside;
 	background-color:#00AAFF;
 	padding:10px;
@@ -99,3 +111,4 @@ textarea
 	padding:20px 10px;
 	background-color:#bbdefb;
 	}
+*/

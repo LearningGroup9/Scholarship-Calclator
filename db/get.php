@@ -6,10 +6,12 @@
   }
   $sql =`select * from btech_cs`;
   try{
-    $sql="SELECT * FROM btech_cs WHERE Semester=1";
+    $sql="SELECT * FROM btech_cs";
     $stmt=$pdo->query($sql);
-    $result=$stmt->fetch(PDO::FETCH_ASSOC);
-    echo $result["fees"];
+    $result=$stmt->fetchAll(PDO::FETCH_ASSOC);
+    foreach($result as $data){
+      echo $data["Semester"]."&nbsp;".$data["fees"]."<br>";
+    }
   }
   catch(PDOException $e){
     echo "Some error in fetching info->".$e;

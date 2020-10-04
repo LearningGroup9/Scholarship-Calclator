@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="./style.css">
-    <title>Scholarship Calculator</title>
-  </head>
-  <body>
-    <center>
-    <h1>Calculate GEHU Scholarship</h1>
+
     <form class="main-form" name="myForm" action="./db/get.php" onsubmit="return validation()" method="post">
       <label for="tenth">10<sup>th</sup> Percentage</label>
       <input type="number" id="tenth" name="tenth" required>
@@ -73,16 +64,5 @@
 
       <br>
       <button type="submit">Get Scholarship value</button>
-  <!--  </form> -->
+    </form>
     <br>
-    <div class="hide2" id="show">
-      Initial Fees <input type="number" id="ini-fees"><br>
-      Scholarship<input type="number" id="scholrshp"><br>
-      Final Fees<input type="number" id="final"><br>
-      </div>
-    </center>
-  </body>
-  <script type="text/javascript"src="./script.js">
-
-  </script>
-</html>
