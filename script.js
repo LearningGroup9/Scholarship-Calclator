@@ -18,29 +18,40 @@
   let sem= document.getElementById("sem");
 
   sem.addEventListener("keydown",function(e){
+    let sem_val=e.key;
+    let error_count=0;
+    let error_sem=document.getElementById("error_sem");
+    error_sem.style.display="none";
+    error_sem.style.color="red";
     if(crse=="btech"){
-      if((e.keyCode>49&&e.keyCode<57)||(e.keyCode>97&&e.keyCode<105)){
-        document.getElementById("prev-sem").style.display="block";
-      }
-      else{
-        document.getElementById("prev-sem").style.display="none";
+      if(sem_val>8){
+        error_count=1;
+        error_sem.style.display="inline";
+        error_sem.innerHTML="**Invalid Selection";
       }
     }
     else if(crse=="mba"||crse=="mca"||crse=="mtech"){
-      if((e.keyCode>49&&e.keyCode<53)||(e.keyCode>97&&e.keyCode<101)){
-        document.getElementById("prev-sem").style.display="block";
-      }
-      else{
-        document.getElementById("prev-sem").style.display="none";
+      if(sem_val>4){
+        error_count=1;
+        error_sem.style.display="inline";
+        error_sem.innerHTML="**Invalid Selection";
       }
     }
     else{
-      if((e.keyCode>49&&e.keyCode<55)||(e.keyCode>97&&e.keyCode<103)){
-        document.getElementById("prev-sem").style.display="block";
+      if(sem_val>6){
+        error_count=1;
+        error_sem.style.display="inline";
+        error_sem.innerHTML="**Invalid Selection";
       }
-      else{
-        document.getElementById("prev-sem").style.display="none";
+    }
+    if(!error_count){
+      let div=document.getElementById("prev-sem");
+      let result="";
+      for(let i=1;i<sem_val;i++){
+        result+='<label for="sem'+i+'"> '+i+' Sem SGPA</label>'+
+        '<input type="number" required id="sem'+i+'" name="sem'+i+'">';
       }
+      div.innerHTML=result;
     }
   });
 

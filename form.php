@@ -38,27 +38,29 @@
           <option value="mech">Mechanical</option>
         </select>
       </div>
-
+      <br>
       <label for="sem">select semester</label>
       <input id="sem" type="number" placeholder="1/2/3/4">
+      <span id="error_sem"></span>
+      <br>
+      <div id="prev-sem">
 
-      <div class="hide" id="prev-sem">
-        <label for="p-sem">Previous sem Result</label>
-        <input type="number" required>
+      <!--  <label for="p-sem">Previous sem Result</label>
+        <input type="number" required>-->
       </div>
 
       <br>
       Choose other key ingridients for ur scholarship<br>
-      <input type="checkbox" name="other" id="gc" value="gc">
+      <input class="inline" type="checkbox" name="other" id="gc" value="gc">
       <label for="gc">Girl Candidate</label>
       <br>
-      <input type="checkbox" name="other" id="sb" value="sb">
+      <input class="inline" type="checkbox" name="other" id="sb" value="sb">
       <label for="sb">Sibblings</label>
       <br>
-      <input type="checkbox" name="other" id="uk" value="uk">
+      <input class="inline" type="checkbox" name="other" id="uk" value="uk">
       <label for="uk">Uttarakhkand Domicile</label>
       <br>
-      <input type="checkbox" name="other" id="army" value="army">
+      <input class="inline" type="checkbox" name="other" id="army" value="army">
       <label for="army">parents in army</label>
       <br>
 
