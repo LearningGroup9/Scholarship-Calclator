@@ -4,7 +4,6 @@
   if($course=="btech" || $course=="mtech"){
     $branch= $_POST["branch"];
   }
-  $sql =`select * from btech_cs`;
   try{
     $sql="SELECT * FROM btech_cs";
     $stmt=$pdo->query($sql);
@@ -14,6 +13,6 @@
     }
   }
   catch(PDOException $e){
-    echo "Some error in fetching info->".$e;
+    echo "Some error in fetching info : ".$e;
   }
  ?>

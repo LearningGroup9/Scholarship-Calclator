@@ -8,6 +8,15 @@
       <input type="number" id="twelth" name="twelth" required>
       <span id="12th"></span><br>
 
+      <label for="campus">Campus</label>
+      <select name="campus" id="campus">
+        <option value="bhimtal">Bhimtal</option>
+        <option value="haldwani">Haldwani</option>
+        <option value="doon_hill">Dehradun(Hill)</option>
+        <option value="doon_deem">Dehradun(Deemed)</option>
+      </select>
+      <br>
+
       <label for="course">Course</label>
       <select name="course" id="course">
         <option value="btech">B Tech</option>
@@ -50,12 +59,12 @@
       </div>
 
       <br>
-      Choose other key ingridients for ur scholarship<br>
+      Choose other key ingridients for your scholarship<br>
       <input class="inline" type="checkbox" name="other" id="gc" value="gc">
       <label for="gc">Girl Candidate</label>
       <br>
       <input class="inline" type="checkbox" name="other" id="sb" value="sb">
-      <label for="sb">Sibblings</label>
+      <label for="sb">Siblings</label>
       <br>
       <input class="inline" type="checkbox" name="other" id="uk" value="uk">
       <label for="uk">Uttarakhkand Domicile</label>

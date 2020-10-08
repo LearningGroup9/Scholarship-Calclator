@@ -10,15 +10,16 @@
     <h1>Calculate GEHU Scholarship</h1>
 
     <div id="Main">
-      <div id="info">
-        <?php
-          require_once "info.php";
-         ?>
-      </div>
+
       <div id="form">
         <?php
           require_once "form.php";
         ?>
+      </div>
+      <div id="info">
+        <?php
+          require_once "info.php";
+         ?>
       </div>
     </div>
 
