@@ -1,4 +1,4 @@
-
+<?php//comment?>
     <form class="main-form" name="myForm" action="./db/get.php" onsubmit="return validation()" method="post">
       <label for="tenth">10<sup>th</sup> Percentage</label>
       <input type="number" id="tenth" name="tenth" required>
