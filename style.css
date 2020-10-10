@@ -3,18 +3,18 @@
 }
 body
 {
-	background: linear-gradient(140deg, #EADEDB 0%, #BC70A4 50%, #BFD641 75%);;
+	background: linear-gradient(to bottom,#ccffcc,#99ff99,#3eaca8,#547a62,#5a5050);
 }
 
 #Main{
-  display: flex;
+  display: grid;
   flex-direction: column;
   justify-content: center;
   align-content: center;
 }
 
 #form{
-  //background-color: #7fff00;
+//  background-color: #7fff00;
   width: auto;
 
   padding-left: 3vmin;

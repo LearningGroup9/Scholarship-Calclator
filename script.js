@@ -24,21 +24,21 @@
     error_sem.style.display="none";
     error_sem.style.color="red";
     if(crse=="btech"){
-      if(sem_val>8){
+      if(sem_val>8&&sem_val<1){
         error_count=1;
         error_sem.style.display="inline";
         error_sem.innerHTML="**Invalid Selection";
       }
     }
     else if(crse=="mba"||crse=="mca"||crse=="mtech"){
-      if(sem_val>4){
+      if(sem_val>4&&sem_val<1){
         error_count=1;
         error_sem.style.display="inline";
         error_sem.innerHTML="**Invalid Selection";
       }
     }
     else{
-      if(sem_val>6){
+      if(sem_val>6&&sem_val<1){
         error_count=1;
         error_sem.style.display="inline";
         error_sem.innerHTML="**Invalid Selection";
